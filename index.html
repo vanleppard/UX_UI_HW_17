@@ -2,34 +2,45 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gill Sans MT">
-        <link rel="stylesheet" href="mystyle.css">
-        <style>
-            body {
-              background-color: black;
-              font-family: 'Gill Sans MT', 'Gill Sans', 'Trebuchet MS', sans-serif;
-            }
-            </style>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="js/index.js">
+       
     </head>
-     <body>
+    <body>
         <header class="navigation">
-            <div class="inline-block logo">
-                <img src="../UX_UI_HW_17/images/Icon.png" width="50" height="50">
-
-            </div>
-            <nav>
-                <ul class="inline-block color: white" >
+            <div class="inline-block">
+                <nav>
+                    <ul class="nav-names">
+                        <li><img src="../UX_UI_HW_17/images/Icon.png" id="logo" width="50" height="50"></li>
+                        <li class="info" id="about"><a href="about.html">ABOUT</a></li>
+                        <li class="info" id="work"><a href="work.html">WORK</a></li>
+                        <li class="info" id="contact">CONTACT</li>
+                        <li class="info" id="resume">RESUME</li>
+                        <li class="social" id="fb">FACEBOOK</li>
+                        <li class="social" id="link">LINKEDIN</li>
+                        <li id="bio"></li>
+                    </ul>
+                </nav>
+             <!-- <nav>
+                <ul class="inline-block" id="nav-names">
+                    <li><img src="../UX_UI_HW_17/images/Icon.png" width="50" height="50"></li>
                     <il style="color: white;">ABOUT</il>
                     <il style="color: white;">WORK</il>
                     <il style="color: white;">CONTACT</il>
                     <il style="color: white;">RESUME</il>
+                </ul>
+                <ul class="inline-block" id="nav-names2">
+                    <il style="color: white;">LINEDIN</il>
+                    <il style="color: white;">FACEBOOK</il>
                 </ul>    
-            </nav>
+             </nav> -->
+            </div>
         </header> 
         <section class="heroimg">
             <div class="content">
-                <aside><img src="../UX_UI_HW_17/images/Picture.png" width="500" height="400"></aside>
+                <aside><img src="../UX_UI_HW_17/images/Picture.png" width="700" height="500"></aside>
                 <p style="color: white;">Rich Schreiber UX/UI Designer</p>
-                <button type="Download Resume"></button>
+                <button type="Download Resume">Download Resume</button>
 
 
             </div>
@@ -42,6 +53,11 @@
                     <il style="color: white;">CONTACT</il>
                     <il style="color: white;">RESUME</il>
             </ul>
-        </footer>  
-     </body>
+        </footer>
+        <div class="preloader">
+            <img src="../UX_UI_HW_17/images/loading.png">
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
 </html>
